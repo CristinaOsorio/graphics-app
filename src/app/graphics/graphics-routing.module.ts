@@ -1,9 +1,9 @@
 import { PieGraphComponent } from './pages/pie-graph/pie-graph.component';
 import { DoubleBargraphComponent } from './pages/double-bargraph/double-bargraph.component';
-import { BargraphComponent } from './components/bargraph/bargraph.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PieGraphHttpComponent } from './pages/pie-graph-http/pie-graph-http.component';
+import { BargraphComponent } from './pages/bargraph/bargraph.component';
 
 const routes: Routes = [
   {
