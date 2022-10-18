@@ -1,1 +1,22 @@
-<p>pie-graph-http works!</p>
+<h1>Redes sociales mas usadas</h1>
+<hr>
+<div class="alert alert-info" *ngIf="doughnutChartData.datasets.length === 0; else divGraph">
+    Cargando data...
+</div>
+
+
+<ng-template #divGraph>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div style="display: block">
+                <canvas baseChart
+                [data]="doughnutChartData"
+                [type]="doughnutChartType">
+                </canvas>
+            </div>
+            <span>Informacion en billones de usuarios</span>
+        </div>
+    </div>
+</ng-template>
+
+
