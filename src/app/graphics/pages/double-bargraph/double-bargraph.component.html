@@ -1,1 +1,12 @@
-<p>double-bargraph works!</p>
+<h1>Grafica de Barras Dobles</h1>
+
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <app-bat-graph [barChartData]="proveedoresData"></app-bat-graph>
+
+    </div>
+    <div class="col-md-6">
+        <app-bat-graph [barChartData]="productData" [horizontal]="true"></app-bat-graph>
+    </div>
+</div>
